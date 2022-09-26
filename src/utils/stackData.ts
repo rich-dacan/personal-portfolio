@@ -1,30 +1,15 @@
 import {
-  FaCss3Alt,
-  FaDocker,
-  FaGitAlt,
-  FaHtml5,
-  FaNodeJs,
-  FaPython,
-  FaReact
+  FaCss3Alt, FaGitAlt,
+  FaHtml5, FaNodeJs, FaPython, FaReact
 } from "react-icons/fa";
 
 import {
-  SiChakraui,
-  SiDjango,
-  SiExpress,
-  SiJavascript,
-  SiMaterialui,
-  SiMysql,
-  SiNextdotjs,
-  SiPostgresql,
-  SiPrisma,
-  SiRedux,
-  SiSequelize,
-  SiStyledcomponents,
+  SiChakraui, SiDjango, SiExpress, SiJavascript,
+  SiMaterialui, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiPrisma, SiRedux, SiSequelize, SiStyledcomponents,
   SiTypescript
 } from "react-icons/si";
 
-export const stackData = [
+export const frontData = [
   {
     title: "HTML5",
     img: FaHtml5,
@@ -50,9 +35,28 @@ export const stackData = [
     img: FaReact,
   },
   {
+    title: "Redux",
+    img: SiRedux,
+  },
+  {
     title: "Next JS",
     img: SiNextdotjs,
   },
+  {
+    title: "Material UI",
+    img: SiMaterialui,
+  },
+  {
+    title: "Chakra UI",
+    img: SiChakraui,
+  },
+  {
+    title: "Styled Components",
+    img: SiStyledcomponents,
+  }
+];
+
+export const backData = [
   {
     title: "Node JS",
     img: FaNodeJs,
@@ -60,6 +64,10 @@ export const stackData = [
   {
     title: "Express JS",
     img: SiExpress,
+  },
+  {
+    title: "Nest JS",
+    img: SiNestjs,
   },
   {
     title: "Python",
@@ -84,25 +92,5 @@ export const stackData = [
   {
     title: "Sequelize ORM",
     img: SiSequelize,
-  },
-  {
-    title: "Redux",
-    img: SiRedux,
-  },
-  {
-    title: "Material UI",
-    img: SiMaterialui,
-  },
-  {
-    title: "Chakra UI",
-    img: SiChakraui,
-  },
-  {
-    title: "Styled Components",
-    img: SiStyledcomponents,
-  },
-  { 
-    title: "Docker", 
-    img: FaDocker 
   },
 ];

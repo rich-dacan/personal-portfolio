@@ -8,7 +8,7 @@ import { Project } from "@/components/Project";
 import { Stack } from "@/components/Stack";
 
 // Data
-import { stackData } from "@/utils/stackData";
+import { backData, frontData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 // Page Style
@@ -63,11 +63,22 @@ export const Home = (): JSX.Element => {
       </Header>
       <StackSection id="tecnologias">
         <Container>
-          <Text as="h4" type="heading3" color="grey1">
-            Tecnologias e ferramentas que domino:
+          <Text as="h4" type="heading2" color="grey1">
+            Tecnologias e ferramentas que domino
+          </Text>
+          <Text as="h4" type="heading4" color="brand1">
+            Front-end:
           </Text>
           <StackCards>
-            {stackData.map((stack, index) => (
+            {frontData.map((stack, index) => (
+              <Stack key={index} title={stack.title} icon={stack.img} />
+            ))}
+          </StackCards>
+          <Text as="h4" type="heading4" color="brand1">
+            Back-end:
+          </Text>
+          <StackCards>
+            {backData.map((stack, index) => (
               <Stack key={index} title={stack.title} icon={stack.img} />
             ))}
           </StackCards>
