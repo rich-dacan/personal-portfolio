@@ -14,8 +14,6 @@ export const Project = styled("article", {
     whiteSpace: "nowrap",
   },
  
-  
-
   '&:hover': {
     backgroundColor: '$grey4',
   }
