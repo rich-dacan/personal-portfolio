@@ -16,17 +16,18 @@ interface ReposType {
   description: string;
   git_url: string;
   homepage: string;
+  topics: [];
 }
 
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
 
+  console.log(repositories)
   useEffect(() => {
     const fetchData = async () => {
       const data: Response = await fetch(
         `https://api.github.com/users/${userData.githubUser}/repos`
       )
-      console.log(repositories)
 
       const json = await data.json();
 
@@ -60,6 +61,13 @@ export const Project = (): JSX.Element => {
               <ProjectStackTech>
                 <Text color="brand1" type="body2">
                   {repository.language}
+                </Text>
+              </ProjectStackTech>
+              <Text type="body2">Tópicos:</Text>
+
+              <ProjectStackTech>
+                <Text color="brand1" type="body2">
+                  {repository.topics.join(', ')}
                 </Text>
               </ProjectStackTech>
             </ProjectStack>

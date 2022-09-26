@@ -7,16 +7,30 @@ export const Project = styled("article", {
   borderRadius: "10px",
   padding: "24px",
 
+  'h2': {
+    maxWidth: "25ch",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+  },
+ 
+  
+
   '&:hover': {
     backgroundColor: '$grey4',
   }
 });
 
 export const ProjectStack = styled(Flex, {
+  display: "flex",
+  flexDirection: "column",
   margin: "1.25rem 0 1.25rem 0",
 });
 
 export const ProjectStackTech = styled("span", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   backgroundColor: "$brand4",
   color: "$brand2",
   padding: "0  0.5rem",
