@@ -22,7 +22,8 @@ interface ReposType {
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
 
-  console.log(repositories)
+  // console.log(repositories);
+
   useEffect(() => {
     const fetchData = async () => {
       const data: Response = await fetch(
@@ -57,13 +58,13 @@ export const Project = (): JSX.Element => {
 
           {repository.language && (
             <ProjectStack>
-              <Text type="body2">Linguagem:</Text>
+              <Text type="body2">Linguagem Principal:</Text>
               <ProjectStackTech>
                 <Text color="brand1" type="body2">
                   {repository.language}
                 </Text>
               </ProjectStackTech>
-              <Text type="body2">Tópicos:</Text>
+              <Text type="body2">Ferramentas e utilitários:</Text>
 
               <ProjectStackTech>
                 <Text color="brand1" type="body2">

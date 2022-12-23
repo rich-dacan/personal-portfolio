@@ -50,7 +50,7 @@ export const NavBar = (): JSX.Element => {
               onClick={OpenMenu}
               aria-label={!open ? "Abrir Menu" : "Fechar Menu"}
             >
-              {!open ? <FaBars /> : <IoClose />}
+              {!open ? <FaBars color="#FFF" /> : <IoClose color="#FFF" size={26} />}
             </Button>
           )}
         </NavbarMobileArea>

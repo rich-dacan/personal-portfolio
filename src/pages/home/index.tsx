@@ -22,7 +22,6 @@ export const Home = (): JSX.Element => {
   return (
     <main>
       <Header>
-
         <Container>
           <HeaderContent>
             <Text type="heading3" color="grey5">
@@ -61,6 +60,7 @@ export const Home = (): JSX.Element => {
           </HeaderContent>
         </Container>
       </Header>
+
       <StackSection id="tecnologias">
         <Container>
           <Text as="h4" type="heading2" color="grey1">
@@ -84,6 +84,7 @@ export const Home = (): JSX.Element => {
           </StackCards>
         </Container>
       </StackSection>
+      
       <ProjectsArea id="projetos">
         <Container>
           <ProjectAreaWrapperColumns>

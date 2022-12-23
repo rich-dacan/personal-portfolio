@@ -6,6 +6,7 @@ import {
 import {
   SiChakraui, SiDjango, SiExpress, SiJavascript,
   SiMaterialui, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiPrisma, SiRedux, SiSequelize, SiStyledcomponents,
+  SiTailwindcss,
   SiTypescript
 } from "react-icons/si";
 
@@ -49,6 +50,10 @@ export const frontData = [
   {
     title: "Chakra UI",
     img: SiChakraui,
+  },
+  {
+    title: "Tailwind CSS",
+    img: SiTailwindcss,
   },
   {
     title: "Styled Components",
